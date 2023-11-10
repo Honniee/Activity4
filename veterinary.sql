@@ -137,3 +137,7 @@ VALUES
 --QUERY:
 ALTER TABLE owners
 ADD COLUMN registereddate DATE;
+
+-- feat/rename-column-paymenttime
+ALTER TABLE invoices
+RENAME COLUMN paymentdate TO paymenttime;
